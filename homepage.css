@@ -1,0 +1,406 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "JINS_Next", "Noto Sans TC", "Helvetica Neue", "Helvetica", "PingFang TC", "Arial", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+body{
+    position: relative;
+    background-color: #f6f7fa;
+}
+
+/* navbar */
+.navbar{
+    width:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1rem;
+}    
+
+.nav-logo{
+    text-decoration: none;
+    font-size:30px;
+    color:#da0024;
+    font-weight: bolder;
+}
+
+.item{
+    display:flex;
+    margin-right:750px;
+
+}
+
+.link{
+    text-decoration: none;
+    color:#000;
+    font-size:0.5rem;
+    margin-left:1rem;
+    padding:0 1rem;
+}
+
+.search, 
+.navbar-open{
+    color:#000;
+	font-size:30px;
+	padding:0 10px;
+}
+
+/* carousel */
+.carousel{
+    position:relative;
+    overflow-x:hidden;
+    padding-bottom:50%;
+}
+
+.carouselMain{
+    display:flex;
+    position:absolute;
+    left:-100vw;
+}
+
+.carousel-img{
+    background-size:cover;
+    background-position:center;
+    width:100vw;
+}
+
+/* 熱門商品 */
+.border{
+    margin:2rem;
+    border:1px solid #979797;
+}
+
+.hotpd{
+    padding:1rem;
+}
+
+.hotpd h2 a{
+    text-decoration: none;
+    font-size:2rem;
+    color:#000;
+    padding-left:2rem;
+}
+
+.hotpd-item{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.hotpd-list{
+    padding-top:1rem;
+}
+
+.active{
+    font-weight: 900;
+}
+
+.hotpd-link{
+    text-decoration: none;
+    color:#000;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.hotpd-link-img{
+    width:400px;
+}
+
+.hotpd-more.loc{
+    text-decoration: none;
+    color:#fff;
+    background-color: #37455E;
+    border:1px solid #000;
+    padding:1rem 2rem;
+    border-radius:3px;
+}
+
+.hotpd-btn{
+    position: absolute;
+    margin-top:1.5rem;
+}
+
+/* 最新消息 */
+.hotpd-news{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5rem 3rem;
+}
+
+.hotpd-title{
+    font-size:2rem;
+}
+
+.hotpd-view{
+    text-decoration: none;
+    color:#000;
+    border:1px solid #000;
+    padding:1rem 2rem;
+    border-radius:3px;
+}
+
+.hotpd-item{
+    overflow: hidden;
+    left:-100vw;
+}
+
+.hotpd-list{
+    margin-left:2rem;
+}
+
+.icon{
+    padding-right:1rem;
+}
+
+.hotpd-red{
+    text-align:center;
+    margin-top:1rem;
+    color:#da0024;
+    font-size:0.5rem;
+}
+
+
+/* icon */
+.hotpd-item-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    margin:6rem;
+}
+
+.icon-slogan{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:3rem 6rem;
+    font-size:0.5rem;
+}
+
+.icon-p{
+    font-size:0.5rem;
+    padding:1rem;
+    color:#37455E;
+}
+
+/* location */
+.hotpd-location{
+    position: relative;
+}
+
+.location{
+    background-image:url('/jins\ pic1.jpeg');
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    padding:10rem 0;
+}
+
+.content{
+    max-width:500px;
+    max-height:300px;
+    background-color: #fff;
+    border:1px solid #979797;
+    line-height: 2;
+    text-align: left;
+    padding:5rem;
+
+}
+
+.content p{
+    color:#37455E;
+}
+
+.hotpd-btn.loc{
+    position: absolute;
+    left:50%;
+    top:70%;
+}
+
+
+.loc{
+    background-color: #37455E;
+    color:#fff;
+    transition:all 0.5s;
+}
+
+.loc:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    margin:2rem 3.5rem;
+}
+
+.footer-item{
+    padding:3rem;
+}
+
+.footer-title{
+    font-size:1.5rem;
+    font-weight: 600;
+    line-height: 2;
+    color:#37455E;
+}
+
+.footer-link{
+    text-decoration: none;
+    color:#37455E;
+    line-height: 2;
+}
+
+.footer-item.media{
+    display:flex;
+    margin:20px;
+}
+
+.footer-list.media{
+    padding-right:1rem;
+}
+
+.footer-country{
+    position: absolute;
+    top:93%;
+    right:21%;
+}
+
+.footer-country p{
+    line-height: 3;
+    color:#37455E;
+    font-size: 10px;
+}
+
+.footer-country-select{
+    width:300px;
+    height:60px;
+    color:#37455E;
+    border-radius: 5px;
+    border:1px solid #000;
+    outline: 0;
+    appearance: none;
+    padding:0 1rem;
+    font-weight:600;
+    background-image:url('https://www.jins.com/tw/images/icon/down-blue.svg');
+    background-repeat: no-repeat;
+    background-position: right 25px center;
+}
+
+
+/* mb-menu */
+.navmb{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+.mb-link{
+    text-decoration: none;
+    color:#da0024;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 20px;
+}
+
+.navbar-close{
+    color:#000;
+	font-size:30px;
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.icon-close{
+    position: absolute;
+    left:30px;
+}
+
+.navbar-open,
+.navbar-close{
+    cursor:pointer;
+}
+
+.supportbtn{
+    position: fixed;
+    bottom: 50px;
+    right:20px;
+    background-color:#D9D9D9;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+.nav-mb{
+    position: fixed;
+    background: #f6f7fa;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 0;
+    pointer-events: none;
+    
+    transition: opacity 0.3s;
+  }
+  .open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+/* footer mb */
+.footer-block{
+    border-bottom:1px solid #979797;
+    /* margin-left:2rem; */
+    cursor:pointer;
+}
+
+.footer-item-block{
+    margin-left:2rem;
+
+}
+
+.footer-item-block.sub .footer-item-block{
+    height:0px;
+    overflow: hidden;
+}
+
+.footer-item-block.sub.open .footer-item-block{
+    height:auto;
+}
+
+.footer-country.mb,
+.footer-list.media.mb{
+    display:none;
+}
+
+
+/* 手機版 */
+@media(max-width:768px){
+    .mb-none{
+        display:none;
+    }
+
+}
+
+/* 電腦版 */
+@media(min-width:769px){
+    .pc-none{
+        display:none;
+    }
+}
